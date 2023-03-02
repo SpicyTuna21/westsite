@@ -43,3 +43,29 @@ body{
     margin-right: auto;
     width: 50%;
 }
+
+.countdown{
+    font-size: 48px;
+    font-family: Arial;
+}
+
+.countdown-small{
+    font-size: large;
+}
+
+.countdowns{
+    background-color: rgb(50, 47, 58);
+}
+
+.cal-col{
+    height: 189px;
+    margin: 0%;
+    border-style: solid;
+    border-color: rgb(50, 50, 50);
+    border-width: thin;
+    font-size: medium;
+}
+
+.weekday{
+    height: 50px
+}
