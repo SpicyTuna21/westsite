@@ -4,12 +4,16 @@ console.log(test)
 const renderDate = function(containerDiv, countDownDate){
     var theDate = new Date(countDownDate).getTime();
     var now = new Date().getTime();
-    var distance = theDate - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById(containerDiv).innerHTML = days + "d " + hours +"h " + minutes + "m " + seconds + "s ";
+    if (theDate <= now){
+        document.getElementById(containerDiv).innerHTML = 'This event has already occured';
+    } else {
+        var distance = theDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById(containerDiv).innerHTML = days + "d " + hours +"h " + minutes + "m " + seconds + "s ";
+    }
 }
 
 const makeCountDown = function(containerDiv, countDownDate){
