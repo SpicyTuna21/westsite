@@ -28,4 +28,13 @@ const makeCountDown = function(containerDiv, countDownDate){
 window.addEventListener('load', function () {
     makeCountDown('countdown1', '2023/05/23 14:30:00') //End of School
     makeCountDown('countdown2', '2023/03/17 7:30:00') //Continuation Pictures
+    makeCountDown('countdown3', '2023/03/21 7:30:00') //Start of math CMAS
+    makeCountDown('countdown4', '2023/03/23 9:30:00') //End of Math CMAS
+    makeCountDown('countdown5', '2023/03/27 0:00:00') //Start of Spring Break
+    makeCountDown('countdown6', '2023/04/03 23:59:00') //End Spring Break
+    makeCountDown('countdown7', '2023/04/11 7:30:00') //Star of LA CMAS
+    makeCountDown('countdown8', '2023/04/13 9:30:00') //End of LA CMAS
+    makeCountDown('countdown9', '2023/04/19 7:30:00') //Start of science CMAS
+    makeCountDown('countdown10', '2023/04/20 9:30:00') //End of science CMAS
+    makeCountDown('countdown11', '2023/05/15 0:00:00') //No school
 })
