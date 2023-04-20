@@ -17,10 +17,8 @@ const renderDate = function(containerDiv, countDownDate){
 }
 
 const makeCountDown = function(containerDiv, countDownDate){
-    console.log(new Date(countDownDate))
-    //setTimeout(function() {
+    //console.log(new Date(countDownDate))
     renderDate(containerDiv, countDownDate)
-    //}, 100);
 
     setInterval(function() {
         renderDate(containerDiv, countDownDate)
@@ -38,7 +36,10 @@ window.addEventListener('load', function () {
     makeCountDown('countdown6', '2023/04/03 23:59:00') //End Spring Break
     makeCountDown('countdown7', '2023/04/11 7:30:00') //Star of LA CMAS
     makeCountDown('countdown8', '2023/04/13 9:30:00') //End of LA CMAS
-    makeCountDown('countdown9', '2023/04/19 7:30:00') //Start of science CMAS
-    makeCountDown('countdown10', '2023/04/20 9:30:00') //End of science CMAS
+    makeCountDown('countdown9', '2023/04/18 7:30:00') //Start of science CMAS
+    makeCountDown('countdown10', '2023/04/19 9:30:00') //End of science CMAS
     makeCountDown('countdown11', '2023/05/15 0:00:00') //No school
+    makeCountDown('countdown12', '2023/05/22 12:00:00') //8th Grade BBQ
+    makeCountDown('countdown13', '2023/05/22 12:00:00') //Elitches
+    makeCountDown('countdown14', '2023/05/25 18:30:00') //Continuation
 })
